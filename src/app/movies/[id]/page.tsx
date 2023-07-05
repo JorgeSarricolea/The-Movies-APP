@@ -38,7 +38,16 @@ async function MoviePage({ params }: MoviePageProps) {
     height: "100%",
     objectFit: "cover",
     borderRadius: "8px",
-    marginRight: "20px",
+    marginRight: "30px",
+  };
+
+  const profilePicture: React.CSSProperties = {
+    width: "200px",
+    height: "200px",
+    objectFit: "cover",
+    borderRadius: "8px",
+    borderEndStartRadius: 0,
+    borderEndEndRadius: 0,
   };
 
   const containerStyle: React.CSSProperties = {
@@ -60,7 +69,7 @@ async function MoviePage({ params }: MoviePageProps) {
   };
 
   return (
-    <div className="items-center justify-center py-10 px-10">
+    <div className="bg-white items-center justify-center py-10 px-10">
       <div
         className="bg-black bg-opacity-80 p-8 rounded-xl relative"
         style={containerStyle}
@@ -77,38 +86,69 @@ async function MoviePage({ params }: MoviePageProps) {
           />
           <div className="text-white py-10">
             <h1 className="text-3xl font-bold mb-4">{movie.title}</h1>
-            <p className="text-sm">
-              <span className="font-bold"></span> {movie.release_date} |{" "}
-              {movie.runtime} min
-            </p>
+            <div className="text-white">
+              {movie.release_date} {"\u2022"}{" "}
+              {movie.genres &&
+                movie.genres.map((genre: Genre) => genre.name).join(", ")}{" "}
+              {"\u2022"} {movie.runtime} min
+            </div>
+
             <p className="text-sm">
               <span className="font-bold">Vote Average:</span>{" "}
               {movie.vote_average}
             </p>
             <h3 className="text-xl font-bold mt-4">Overview</h3>
             <p className="text-sm">{movie.overview}</p>
-            <div className="text-white py-10">
-              <h3 className="text-xl font-bold mt-4">Genres</h3>
-              {movie.genres &&
-                movie.genres.map((genre: Genre) => (
-                  <p key={genre.id}>{genre.name}</p>
-                ))}
-            </div>
-            <div className="text-white py-10">
-              <h3 className="text-xl font-bold mt-4">Cast</h3>
-              {credits.cast &&
-                credits.cast.map((credits: Cast) => (
-                  <p key={credits.id}>{credits.name}</p>
-                ))}
-            </div>
-            <div className="text-white py-10">
-              <h3 className="text-xl font-bold mt-4">Crew</h3>
-              {credits.cast &&
-                credits.cast.map((credits: Crew) => (
-                  <p key={credits.id}>{credits.name}</p>
-                ))}
+            <div className="py-10">
+              <h3 className="text-xl font-bold mt-4">Director</h3>
+              {credits.crew &&
+                credits.crew
+                  .filter((member: Crew) => member.job === "Director")
+                  .map((director: Crew) => (
+                    <div key={director.id}>
+                      <p>{director.name}</p>
+                    </div>
+                  ))}
             </div>
           </div>
+        </div>
+      </div>
+
+      <h3 className="text-black text-xl font-bold mt-4">Top Billed Cast</h3>
+      <div className="flex relative">
+        <div
+          className="text-black rounded-lg mt-5"
+          style={{
+            overflowX: "auto",
+          }}
+        >
+          <div className="flex flex-nowrap pl-5">
+            {credits.cast &&
+              credits.cast.map((character: Cast) => (
+                <div
+                  key={character.id}
+                  className="mr-4 min-w-[200px] bg-gray-200 rounded-lg shadow-md"
+                >
+                  <img
+                    src={`https://image.tmdb.org/t/p/w500${character.profile_path}`}
+                    alt={character.name}
+                    style={profilePicture}
+                  />
+                  <p className="mt-2 px-2">{character.name}</p>
+                  <p className="mt-2 px-2">({character.character})</p>
+                </div>
+              ))}
+          </div>
+        </div>
+        <div className="ml-10 mt-10 min-w-[200px]">
+          <p className="text-black font-bold">Status</p>
+          <p className="text-black">{movie.status}</p>
+          <p className="text-black font-bold">Original Language</p>
+          <p className="text-black">{movie.original_language}</p>
+          <p className="text-black font-bold">Budget</p>
+          <p className="text-black">${movie.budget} USD</p>
+          <p className="text-black font-bold">Revenue</p>
+          <p className="text-black">${movie.revenue} USD</p>
         </div>
       </div>
     </div>

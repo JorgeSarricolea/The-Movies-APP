@@ -20,14 +20,14 @@ const Home: React.FC = () => {
 
     return movies.map((movie) => (
       <Link key={movie.id} href={`/movies/${movie.id}`}>
-        <div className="bg-gray-200 p-4 hover:bg-blue-200 transform hover:scale-105 transition duration-300 rounded-2xl cursor-pointer">
-          <h5 className="text-lg font-bold mb-2">{movie.title}</h5>
+        <div className="text-black bg-gray-200 p-4 hover:bg-blue-200 transform hover:scale-105 transition duration-300 rounded-2xl cursor-pointer">
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
             className="w-full h-auto mb-2 rounded-2xl"
           />
-          <p className="text-sm">Release Date: {movie.release_date}</p>
+          <h5 className="text-lg font-bold">{movie.title}</h5>
+          <p className="text-sm">{movie.release_date}</p>
           <p className="text-sm">Vote Average: {movie.vote_average}</p>
         </div>
       </Link>
@@ -36,7 +36,9 @@ const Home: React.FC = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-5 gap-4 py-10 px-10">{renderMovies()}</div>
+      <div className="bg-white grid grid-cols-5 gap-4 py-10 px-10">
+        {renderMovies()}
+      </div>
     </div>
   );
 };

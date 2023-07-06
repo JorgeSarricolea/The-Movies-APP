@@ -1,4 +1,8 @@
+[The Movies APP](https://the-movies-app-mocha.vercel.app)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+In this [link](https://the-movies-app-mocha.vercel.app), you can view the live version of the project. Please note that it is not currently responsive.
 
 ## Getting Started
 

@@ -18,7 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </Head>
-      <nav className="flex justify-between items-center text-white p-4 px-20">
+      <nav className="flex justify-between items-center text-white p-4 px-20 bg-gray-800">
         <div className="text-xl font-bold">
           <Link href="/" passHref>
             <span>The Movies APP</span>
@@ -51,7 +51,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </Link>
         </div>
       </nav>
-      <main>{children}</main>
+      <main className="bg-whithe">{children}</main>
     </>
   );
 };

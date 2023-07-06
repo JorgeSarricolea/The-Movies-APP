@@ -11,45 +11,44 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </Head>
-      <nav className="flex justify-between items-center bg-gray-800 text-white p-4">
+      <nav className="flex justify-between items-center bg-gray-800 text-white p-4 px-20">
         <div className="text-xl font-bold">
-          <Link href="/">
+          <Link href="/" passHref>
             <span>The Movies APP</span>
           </Link>
         </div>
-        <div className="relative">
-          <button className="flex items-center">
-            Opciones
-            <svg
-              className="ml-2 w-5 h-5"
-              viewBox="0 0 20 20"
-              fill="currentColor"
+        <div className="text-xl font-bold" style={{ display: "inline-block" }}>
+          <Link href="/upcoming" passHref>
+            <p
+              className="text-sm hover:font-bold mr-10"
+              style={{ display: "inline" }}
             >
-              <path
-                fillRule="evenodd"
-                d="M6 6l8 4-8 4V6zm1 4v2h4v-2H7z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </button>
-          <div className="absolute right-0 mt-2 bg-white text-gray-800 border rounded-md shadow-lg hidden">
-            <ul className="py-2 px-4">
-              <li className="cursor-pointer hover:bg-gray-200 py-1">
-                Upcoming
-              </li>
-              <li className="cursor-pointer hover:bg-gray-200 py-1">Popular</li>
-              <li className="cursor-pointer hover:bg-gray-200 py-1">
-                Top rated
-              </li>
-            </ul>
-          </div>
+              Upcoming
+            </p>
+          </Link>
+          <Link href="/" passHref>
+            <p
+              className="text-sm hover:font-bold mr-10"
+              style={{ display: "inline" }}
+            >
+              Popular
+            </p>
+          </Link>
+          <Link href="/top_rated" passHref>
+            <p
+              className="text-sm hover:font-bold"
+              style={{ display: "inline" }}
+            >
+              Top Rated
+            </p>
+          </Link>
         </div>
       </nav>
       <main>{children}</main>

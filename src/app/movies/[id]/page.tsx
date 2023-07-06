@@ -43,7 +43,7 @@ async function MoviePage({ params }: MoviePageProps) {
 
   const profilePicture: React.CSSProperties = {
     width: "200px",
-    height: "200px",
+    height: "250px",
     objectFit: "cover",
     borderRadius: "8px",
     borderEndStartRadius: 0,

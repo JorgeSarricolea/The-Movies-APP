@@ -51,7 +51,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </Link>
         </div>
       </nav>
-      <main className="bg-whithe">{children}</main>
+      <main className="bg-black">{children}</main>
+      <body className="bg-black"></body>
     </>
   );
 };

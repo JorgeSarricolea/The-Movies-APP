@@ -33,7 +33,10 @@ const RootLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
                 <p className="text-sm hover:font-bold mr-10">Popular</p>
               </Link>
               <Link href="/top_rated" passHref>
-                <p className="text-sm hover:font-bold">Top Rated</p>
+                <p className="text-sm hover:font-bold mr-10">Top Rated</p>
+              </Link>
+              <Link href="https://jorgesarricolea.com" passHref target="_blank">
+                <p className="text-sm hover:">Powered by Jorge Sarricolea</p>
               </Link>
             </div>
           </div>

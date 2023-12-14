@@ -42,7 +42,8 @@ node -v
 
 ### Prerequisites
 
-> [!IMPORTANT] > **Node.js:** Ensure that you have Node.js installed on your system.
+> [!IMPORTANT]
+> **Node.js:** Ensure that you have Node.js installed on your system.
 
 ### Installation
 

@@ -6,9 +6,14 @@ In this [link](https://the-movies-app-mocha.vercel.app), you can view the live v
 
 ## Getting Started
 
-1. Verificar la versión de Node que tenemos instalada.
-> [TIP!]
-> 
+1. Verificar la versión de Node que tenemos instalada (Ubuntu).
+> [!TIP]
+> Recomiendo instalar Node Version Manager y usar la versión estable.
+
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+```
 
 ```bash
 npm run dev

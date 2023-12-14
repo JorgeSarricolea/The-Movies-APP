@@ -13,10 +13,8 @@ To get started with "The-Movies-App", follow these simple steps:
 > [!IMPORTANT]
 > **Node:** Ensure that you have Node.js installed on your system.
 
-1. Verificar la versión de Node que tenemos instalada (Ubuntu).
-
 > [!TIP]
-> Recomiendo instalar Node Version Manager y usar la versión estable.
+> Recomiendo instalar **Node Version Manager** y usar la versión estable.
 
 ```bash
 # Instalar NVM (Node Version Manager)
@@ -46,9 +44,15 @@ git clone https://github.com/JorgeSarricolea/The-Movies-APP
 cd The-Movies-APP
 ```
 
-3. Ejecutar el servidor de desarrollo
+3. Instalar las dependencias de Node:
 
-```bash
+```
+npm install
+```
+
+4. Ejecutar el servidor de desarrollo:
+
+```
 npm run dev
 ```
 

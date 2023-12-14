@@ -46,12 +46,10 @@ git clone https://github.com/JorgeSarricolea/The-Movies-APP
 cd The-Movies-APP
 ```
 
+3. Ejecutar el servidor de desarrollo
+
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -17,7 +17,7 @@ The Movies APP is a platform designed to view information about the most popular
 
 ## Introduction
 
-Este proyecto demuestra mis habilidades para realizar la obtención de datos de una API [TheMovieDB](https://www.themoviedb.org). Combina la potencia de React para construir interfaces de usuario dinámicas e interactivas, TypeScript para una gestión segura y eficiente de los tipos de datos extraídos de la API, Tailwind CSS para estilos modernos y Next.js para un despliegue rápido y eficiente.
+This project showcases my skills in fetching data from [TheMovieDB](https://www.themoviedb.org). It combines the power of React to build dynamic and interactive user interfaces, TypeScript for secure and efficient management of data types extracted from the API, Tailwind CSS for modern styles, and Next.js for swift and efficient deployment.
 
 ## Getting Started
 

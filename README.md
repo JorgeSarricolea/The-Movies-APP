@@ -6,7 +6,9 @@ In this [link](https://the-movies-app-mocha.vercel.app), you can view the live v
 
 ## Getting Started
 
-First, run the development server:
+1. Verificar la versión de Node que tenemos instalada.
+> [TIP!]
+> 
 
 ```bash
 npm run dev

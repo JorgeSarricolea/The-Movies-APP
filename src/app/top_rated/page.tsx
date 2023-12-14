@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Movie } from "../../../types/Movie";
 
 // Fetching API
-const API_KEY = "4f298a53e552283bee957836a529baec";
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
 
 async function fetchMovies(): Promise<Movie[]> {
   const res = await fetch(

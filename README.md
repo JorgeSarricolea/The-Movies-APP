@@ -6,6 +6,13 @@ In this [link](https://the-movies-app-mocha.vercel.app), you can view the live v
 
 ## Getting Started
 
+To get started with "The-Movies-App", follow these simple steps:
+
+### Prerequisites
+
+> [!IMPORTANT]
+> **Node:** Ensure that you have Node.js installed on your system.
+
 1. Verificar la versión de Node que tenemos instalada (Ubuntu).
 
 > [!TIP]

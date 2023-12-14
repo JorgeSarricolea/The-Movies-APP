@@ -56,8 +56,6 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 ## Features
 In this project, you will find two pages:
 

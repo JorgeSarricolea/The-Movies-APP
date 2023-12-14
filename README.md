@@ -32,6 +32,19 @@ nvm install stable
 node -v
 ```
 
+### Installation
+
+1. Clone the repository to your local machine:
+
+```
+git clone https://github.com/JorgeSarricolea/The-Movies-APP
+```
+
+2. Navigate to the project directory:
+
+```
+cd The-Movies-APP
+```
 
 ```bash
 npm run dev

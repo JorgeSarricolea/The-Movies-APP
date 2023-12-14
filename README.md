@@ -2,33 +2,47 @@
 
 The Movies APP is a platform designed to view information about the most popular, highest-rated, and upcoming movies. The information is obtained from TheMovieDB API.
 
+## Table of Contents
+
+- [The Movies APP](#the-movies-app)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+  - [Features](#features)
+  - [Deployment](#deployment)
+  - [Contribution](#contribution)
+  - [Copyright](#copyright)
+
 ## Introduction
+
+Este proyecto demuestra mis habilidades para realizar la obtención de datos de una API [TheMovieDB](https://www.themoviedb.org). Combina la potencia de React para construir interfaces de usuario dinámicas e interactivas, TypeScript para una gestión segura y eficiente de los tipos de datos extraídos de la API, Tailwind CSS para estilos modernos y Next.js para un despliegue rápido y eficiente.
 
 ## Getting Started
 
 To get started with "The-Movies-App", follow these simple steps:
 
 > [!TIP]
-> Recomiendo instalar **Node Version Manager** y usar la versión estable.
+> I recommend installing Node Version Manager and using the stable version.
 
 ```bash
-# Instalar NVM (Node Version Manager)
+# Install nvm (Node Version Manager)
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 
-# Verificar la version de nvm instalada
+# Check the version of nvm installed
 nvm --version
 
-# Instalar la versión estable de Node
+# Install the stable version of Node
 nvm install stable
 
-# Verificar la versión de Node instalada
+# Check the version of Node installed
 node -v
 ```
 
 ### Prerequisites
 
-> [!IMPORTANT]
-> **Node.js:** Ensure that you have Node.js installed on your system.
+> [!IMPORTANT] > **Node.js:** Ensure that you have Node.js installed on your system.
 
 ### Installation
 
@@ -44,24 +58,30 @@ git clone https://github.com/JorgeSarricolea/The-Movies-APP
 cd The-Movies-APP
 ```
 
-3. Instalar las dependencias de Node:
+3. Install Node dependencies:
 
 ```
 npm install
 ```
 
-4. Ejecutar el servidor de desarrollo:
+4. Run the development server:
 
 ```
 npm run dev
 ```
 
 ## Features
-In this project, you will find two pages:
 
-- The main page where you can choose between three movie options: "Upcoming, Popular, and Top Rated." In addition to this, you can view the list of movies with their posters, names, release dates, and ratings.
+Some of the key features of this project include:
 
-- The movie detail page: By clicking on a movie, you will be redirected to a page where you can see all the details of the movie, such as duration, cast, budget, etc.
+- **React for Interactivity:** We utilize React to build highly dynamic and interactive user interfaces, providing an engaging and responsive user experience.
+
+- **Type-Safety with TypeScript:** TypeScript ensures a secure and precise handling of API data, delivering a more robust development experience.
+
+- **Modern Styles with Tailwind CSS:** The user interface benefits from the flexibility and efficiency of Tailwind CSS, delivering modern and appealing styles that seamlessly align with the latest design trends.
+
+- **Swift Deployment with Next.js:** Thanks to Next.js, our project deploys quickly and efficiently, offering an agile and seamless user experience.
+
 
 ## Deployment
 

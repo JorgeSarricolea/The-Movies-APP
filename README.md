@@ -8,11 +8,6 @@ In this [link](https://the-movies-app-mocha.vercel.app), you can view the live v
 
 To get started with "The-Movies-App", follow these simple steps:
 
-### Prerequisites
-
-> [!IMPORTANT]
-> **Node:** Ensure that you have Node.js installed on your system.
-
 > [!TIP]
 > Recomiendo instalar **Node Version Manager** y usar la versión estable.
 
@@ -29,6 +24,11 @@ nvm install stable
 # Verificar la versión de Node instalada
 node -v
 ```
+
+### Prerequisites
+
+> [!IMPORTANT]
+> **Node:** Ensure that you have Node.js installed on your system.
 
 ### Installation
 

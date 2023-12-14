@@ -10,7 +10,7 @@ In this [link](https://the-movies-app-mocha.vercel.app), you can view the live v
 > [!TIP]
 > Recomiendo instalar Node Version Manager y usar la versión estable.
 
-Instala nvm
+# Instalar NVM (Node Version Manager)
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```

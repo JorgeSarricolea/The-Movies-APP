@@ -1,8 +1,8 @@
 # [The Movies APP](https://the-movies-app-mocha.vercel.app)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The Movies APP is a platform designed to view information about the most popular, highest-rated, and upcoming movies. The information is obtained from TheMovieDB API.
 
-In this [link](https://the-movies-app-mocha.vercel.app), you can view the live version of the project. Please note that it is not currently responsive.
+## Introduction
 
 ## Getting Started
 
